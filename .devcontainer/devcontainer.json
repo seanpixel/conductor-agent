@@ -1,0 +1,14 @@
+{
+  "name": "Conductor Agent",
+  "forwardPorts": [5173, 8080],
+  "portsAttributes": {
+    "5173": {
+      "label": "Frontend",
+      "onAutoForward": "openBrowser"
+    },
+    "8080": {
+      "label": "Backend API"
+    }
+  },
+  "postStartCommand": "echo 'Welcome to Conductor Agent! Run ./run_all.sh to start the application.'"
+}
